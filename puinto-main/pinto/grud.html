@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>cadastro de nomes</h2>
+    <input type="texto" id="nome" placeholder="digite um nome">
+    <button onclick="adicionar()">adicionar</button>
+    <button>mostrar lista</button>
+    <p id="resultado"></p>
+
+
+    <script>
+        let nomes =[];
+        function adicionar(){
+        let nome = document.getElementById("nome").value;    
+        if(nome !=""){
+        momes.push(nome);
+        document.getElementById("nome").value = "";
+
+        }    
+        }
+        function mostrar(){
+        let texto = "Nomes cadastrado: <br>"
+        for(let i=o;  i<nomes. length; i++){
+        texto += nome[i] + "<br>";
+
+
+        }
+        document.getElementById("resultado").innerHTML = texto;
+
+        }
+
+
+
+
+    </script>
+</body>
+</html>
